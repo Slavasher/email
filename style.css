@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    outline: none;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://mobimg.b-cdn.net/v3/fetch/a6/a6f342bd1416a3a000abe40e60ab200d.jpeg");
+
+}
+
+.container {
+    position: relative;
+    max-width: 400px;
+    background-image: url("https://catherineasquithgallery.com/uploads/posts/2021-02/1612581087_79-p-fon-dlya-prezentatsii-zelenii-s-babochkami-97.jpg");
+    padding: 40px 40px;
+    text-align: center;
+    box-shadow: 0 0 40px rgb(15, 246, 0);
+}
+
+p {
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+
+#email {
+    height: 30px;
+    width: 300px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    margin-top: 10px;
+    border: 2px solid #423e3e;
+}
+
+#email[type='text'] {
+    padding: 0 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#email::placeholder {
+    letter-spacing: 0px
+}
+
+.valid {
+    text-transform: capitalize;
+    font-size: 16px;
+    margin-top: 8px;
+    padding: 10px 8px;
+    position: relative;
+    background: #850000;
+    color: white;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    display: none;
+}
+
+.valid:after {
+    content: '';
+    height: 15px;
+    width: 15px;
+    background: #850000;
+    position: absolute;
+    bottom: 28px;
+    right: 20px;
+    transform: rotate(45deg);
+
+}
+
+.icons {
+    position: relative;
+    bottom: 83px;
+    width: 30px;
+    left: 84%;
+}
+
+.icons .icon1 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #ff0303;
+    border-radius: 50%;
+    line-height: 25px;
+    color: #ff0303;
+    left: 11px;
+    top: -4px;
+    display: none;
+
+}
+
+.icons .icon2 {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #39af00;
+    border-radius: 50%;
+    line-height: 25px;
+    color: #39af00;
+    left: 12px;
+    display: none;
+    top: 53px;
+}
+
+.button {
+    margin: 10px;
+    padding: 10px 0;
+    position: relative;
+}
+
+#btn {
+    position: absolute;
+    top: 15px;
+    right: -11px;
+    padding: 13px 112px;
+    background: blue;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px rgba(0, 0, 256, 0.6);
+    display: none;
+}
+
+#btn:active {
+    transform: scale(1.01);
+}
